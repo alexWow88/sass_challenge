@@ -1,0 +1,116 @@
+@import 'assets/styles/_variables';
+@import 'assets/styles/_buttons';
+@import 'assets/styles/_typography';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+// Nav styling
+
+.nav {
+  background-color: $primary-color;
+  color: $text-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 3px;
+  &__title{
+    font-family: $secondary-font;
+    width: 100vw;
+    font-size: 40px;
+    margin: 0;
+  }
+  &__login{
+    width: 120px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+}
+
+// Hero styling
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  &__title {
+    font-size: 40px;
+    color: $primary-color;
+    margin: 0;
+    font-family: $primary-font;
+  }
+  &__subtitle {
+    font-size: 30px;
+    font-family: $secondary-font;
+    color: $third-color;
+    padding: 5px;
+    margin: 0;
+  }
+  &__scroll {
+    width: 150px;
+    margin: 0;
+    font-size: 23px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+}
+
+// Wave break (removed becasue i went with svg)
+
+// #wave {
+//   position: relative;
+//   height: 70px;
+//   width: 100vw;
+//   background: $primary-color;
+//   transform: rotate(180deg);
+//   &:before {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     border-radius: 100% 50%;
+//     width: 340px;
+//     height: 80px;
+//     background-color: white;
+//     right: -5px;
+//     top: 40px;
+//   }
+//   &:after {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     border-radius: 100% 50%;
+//     width: 300px;
+//     height: 70px;
+//     background-color: $primary-color;
+//     left: 0;
+//     top: 27px;
+//   }
+// }
+
+#wave{
+  margin-bottom: 0;
+}
+
+// Form styling
+
+.form{
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+  .form__panel{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: $form-color;
+    border:1px solid black;
+    &__label{
+      margin: 0 5px;
+    }
+    &__input{
+      margin: 5px;
+    }
+  }
+}
